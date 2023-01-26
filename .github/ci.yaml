@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+permissions: read-all
+
+jobs:
+  print:
+    runs-on: ubuntu-20.04
+    name: Run
+    steps:
+      - uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579
+      - uses: actions/setup-node@1f8c6b94b26d0feae1e387ca63ccbdc44d27b561
+        with:
+          node-version: 12.x
+      - name: print vars
+        id: print_vars
+        run: |
+          node index.js

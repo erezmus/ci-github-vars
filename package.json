@@ -1,0 +1,9 @@
+{
+  "name": "ci-github-vars",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/erezmus/ci-github-vars.git",
+  "author": "Erez Odier <2045191+erezmus@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true
+}
